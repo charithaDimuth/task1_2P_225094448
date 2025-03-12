@@ -46,30 +46,19 @@ public class SeleniumOperations {
     }
 
     public static void open_chrome_loadpage_resize_close() {
-        // A: Print Student Information
         System.out.println("Hello from 225094448, W.A. Charitha Dimuth Wickramanayake");
-
-        // B: Fire up Chrome browser
         System.out.println("Fire up Chrome browser.");
         WebDriver driver = new ChromeDriver();
         System.out.println("Driver info: " + driver);
-
-        // C: Load Google page
         sleep(2);
         driver.get("https://www.google.com");
         System.out.println("Google page loaded.");
-
-        // D: Resize window to 640x480
         driver.manage().window().setSize(new Dimension(640, 480));
         System.out.println("Resized to 640x480");
         sleep(2);
-
-        // E: Resize window to 1280x960
         driver.manage().window().setSize(new Dimension(1280, 960));
         System.out.println("Resized to 1280x960");
         sleep(2);
-
-        // F: Close the browser
         System.out.println("Closing browser.");
         driver.close();
     }
